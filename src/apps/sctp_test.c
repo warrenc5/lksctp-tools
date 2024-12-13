@@ -1118,7 +1118,7 @@ client(int sk)
 		msg_size = next_msg_size(i);
 
 		if (msg_size == 0) {
-			fprintf(stdout, "Sleeping 1 second on zero size message");
+			fprintf(stdout, "Sleeping 1 second on zero size message\n");
 			sleep(1);
 			continue;
 		}
@@ -1301,7 +1301,7 @@ mixed_mode_test(void)
 					order_pattern);
 
 				if (n_msg_size == 0) {
-					fprintf(stdout, "Sleeping on zero size message");
+					fprintf(stdout, "Sleeping on zero size message\n");
 					sleep(1);
 					continue;
 				}
